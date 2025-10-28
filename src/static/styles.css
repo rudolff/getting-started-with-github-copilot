@@ -87,9 +87,23 @@ section h3 {
 }
 
 .activity-card .participants li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 3px 0;
   color: #666;
   font-size: 0.9em;
+}
+
+.activity-card .participants li .delete-icon {
+  color: #dc3545;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.activity-card .participants li .delete-icon:hover {
+  opacity: 1;
 }
 
 .activity-card .no-participants {
